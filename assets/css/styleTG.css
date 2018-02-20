@@ -1,0 +1,28 @@
+html, body{
+	height: 100%;
+}
+body{
+	background-image: url("../images/1200px-Major_League_Baseball_logo.svg.png");
+	background-size: 100%;
+	text-align: center;
+}
+h1 {
+	font-family: 'Yellowtail', cursive;
+	color: red;
+	font-size: 80px;
+	text-shadow: -1px 0 gold, 0 1px gold, 1px 0 gold, 0 -1px gold;
+}
+
+button {
+	display:block;
+  	width:50%;
+  	height:20%;
+  	margin: 0 auto;
+  	border: 2px solid gold;
+  	cursor: pointer;
+  	background:transparent;
+  	font-size: 42px;
+  	font-family: 'Yellowtail', cursive;
+	color: blue;
+	text-shadow: -1px 0 gold, 0 1px gold, 1px 0 gold, 0 -1px gold;
+}
