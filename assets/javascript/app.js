@@ -1,3 +1,37 @@
+$(document).ready(function() {
+
+  var intervalId;
+  var clockRunning = false;
+  var stopwatch = 60;
+
+  $("#startquiz").on("click", function() {
+  	start();
+  })
+
+
+  function start() {
+    // DONE: Use setInterval to start the count here and set the clock to running.
+    if (!clockRunning) {
+        intervalId = setInterval(count, 1000);
+        clockRunning = true;
+        $('#gameTimer').html(gameTimer)
+        console.log(stopwatch)
+    }
+  }
+  function stop() {
+    // DONE: Use clearInterval to stop the count here and set the clock to not be running.
+    clearInterval(intervalId);
+    clockRunning = false;
+  }
+
+	function count () {
+		stopwatch--;
+		console.log(stopwatch)
+	}
+
+
+
+
 var questions = [{
 	question: "What team did Babe Ruth play for before joining the Boston Red Sox?",
 	answers: ["New York Yankees", "Cincinnati Reds", "Baltimore Orioles", "Boston Braves"],
@@ -49,3 +83,5 @@ var questions = [{
 	correctAnswer: "Houston Astros",
 	image: "assets/images/borioles.png"
 }];
+
+});
