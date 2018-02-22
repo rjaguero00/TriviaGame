@@ -1,9 +1,18 @@
 <!DOCTYPE html> 
 <html>
 <head>
+
 	<title>MLB Trivia Quiz</title>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 	<link rel="stylesheet" href="assets/css/styleTG.css">
+
+	<!-- <link rel="stylesheet" href="assets/css/reset5.css"> -->
+
 	<link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>	
@@ -17,148 +26,158 @@
 		</div>
 	</div>
 
-<form>
-	<div id="gameTimer">Time Remaining:</div>
+
+<div id="listofQs">
+	<form>
+		<h3 id='timer'>Time Remaining:<div id="gameTimer"></div></h3>
 
 
-  <p>What team did Babe Ruth play for before joining the Boston Red Sox?</p>
+  		<p>What team did Babe Ruth play for before joining the Boston Red Sox?</p>
 
-  <div>
-    <input type="radio" id="New York Yankees" name="q1">
-    <label for="New York Yankees">New York Yankees</label>
-    <input type="radio"  id="Cincinnati Reds" name="q1">
-     <label for="Cincinnati Reds">Cincinnati Reds</label>
-    <input type="radio" id="Baltimore Orioles" name="q1">
-     <label for="Baltimore Orioles">Baltimore Orioles</label> 
-    <input type="radio" id="Boston Braves" name="q1">
-     <label for="Boston Braves">Boston Braves</label>
- </div>
+  			<div>
+    			<input type="radio" id="New York Yankees" name="q1">
+    			<label for="New York Yankees">New York Yankees</label>
+    			<input type="radio"  id="Cincinnati Reds" name="q1">
+     			<label for="Cincinnati Reds">Cincinnati Reds</label>
+    			<input type="radio" id="Baltimore Orioles" name="q1">
+     			<label for="Baltimore Orioles">Baltimore Orioles</label> 
+    			<input type="radio" id="Boston Braves" name="q1">
+     			<label for="Boston Braves">Boston Braves</label>
+ 			</div>
 
-   <p>What team moved to D.C. to become the Washington Nationals in 2005?</p>
+   		<p>What team moved to D.C. to become the Washington Nationals in 2005?</p>
 
-  <div>
-    <input type="radio" id="Montreal Expos" name="q2">
-    <label for="Montreal Expos">Montreal Expos</label>
-    <input type="radio"  id="Brooklyn Dodgers" name="q2">
-     <label for="Brooklyn Dodgers">Brooklyn Dodgers</label>
-    <input type="radio" id="Kansas City Monarchs" name="q2">
-     <label for="Kansas City Monarchs">Kansas City Monarchs</label> 
-    <input type="radio" id="Tokyo Gaints" name="q2">
-     <label for="Tokyo Gaints">Tokyo Gaints</label>
- </div>
+ 			 <div>
+			    <input type="radio" id="Montreal Expos" name="q2">
+			    <label for="Montreal Expos">Montreal Expos</label>
+			    <input type="radio"  id="Brooklyn Dodgers" name="q2">
+			    <label for="Brooklyn Dodgers">Brooklyn Dodgers</label>
+			    <input type="radio" id="Kansas City Monarchs" name="q2">
+			    <label for="Kansas City Monarchs">Kansas City Monarchs</label> 
+			    <input type="radio" id="Tokyo Gaints" name="q2">
+			    <label for="Tokyo Gaints">Tokyo Gaints</label>
+			 </div>
 
-   <p>What player currently holds the record for most home runs in a season?</p>
+   		<p>What player currently holds the record for most home runs in a season?</p>
 
-  <div>
-    <input type="radio" id="Roger Maris" name="q3">
-    <label for="Roger Maris">Roger Maris</label>
-    <input type="radio"  id="Mark McGwire" name="q3">
-     <label for="Mark McGwire">Mark McGwire</label>
-    <input type="radio" id="Babe Ruth" name="q3">
-     <label for="Babe Ruth">Babe Ruth</label> 
-    <input type="radio" id="Barry Bonds" name="q3">
-     <label for="Barry Bonds">Barry Bonds</label>
- </div>
+			  <div>
+			    <input type="radio" id="Roger Maris" name="q3">
+			    <label for="Roger Maris">Roger Maris</label>
+			    <input type="radio"  id="Mark McGwire" name="q3">
+			    <label for="Mark McGwire">Mark McGwire</label>
+			    <input type="radio" id="Babe Ruth" name="q3">
+			    <label for="Babe Ruth">Babe Ruth</label> 
+			    <input type="radio" id="Barry Bonds" name="q3">
+			    <label for="Barry Bonds">Barry Bonds</label>
+			 </div>
 
-   <p>What is the oldest active ball park in Major League Baseball?</p>
+   		<p>What is the oldest active ball park in Major League Baseball?</p>
 
-  <div>
-    <input type="radio" id="Fenway Park" name="q4">
-    <label for="Fenway Park">Fenway Park</label>
-    <input type="radio"  id="Wrigley Field" name="q4">
-     <label for="Wrigley Field">Wrigley Field</label>
-    <input type="radio" id="Busch Stadium" name="q4">
-     <label for="Busch Stadium">Busch Stadium</label> 
-    <input type="radio" id="Minute Maid Park" name="q4">
-     <label for="Minute Maid Park">Minute Maid Park</label>
- </div>
+			  <div>
+			    <input type="radio" id="Fenway Park" name="q4">
+			    <label for="Fenway Park">Fenway Park</label>
+			    <input type="radio"  id="Wrigley Field" name="q4">
+			    <label for="Wrigley Field">Wrigley Field</label>
+			    <input type="radio" id="Busch Stadium" name="q4">
+			    <label for="Busch Stadium">Busch Stadium</label> 
+			    <input type="radio" id="Minute Maid Park" name="q4">
+			    <label for="Minute Maid Park">Minute Maid Park</label>
+			 </div>
 
-   <p>What team won the 2017 World Series?</p>
+   		<p>What team won the 2017 World Series?</p>
 
-  <div>
-    <input type="radio" id="Los Angeles Dodgers" name="q5">
-    <label for="Los Angeles Dodgers">Los Angeles Dodgers</label>
-    <input type="radio"  id="New York Yankess" name="q5">
-     <label for="New York Yankess">New York Yankess</label>
-    <input type="radio" id="Houston Astros" name="q5">
-     <label for="Houston Astros">Houston Astros</label> 
-    <input type="radio" id="St Louis Cardinals" name="q5">
-     <label for="St Louis Cardinals">St Louis Cardinals</label>
- </div>
+			  <div>
+			    <input type="radio" id="Los Angeles Dodgers" name="q5">
+			    <label for="Los Angeles Dodgers">Los Angeles Dodgers</label>
+			    <input type="radio"  id="New York Yankess" name="q5">
+			    <label for="New York Yankess">New York Yankess</label>
+			    <input type="radio" id="Houston Astros" name="q5">
+			    <label for="Houston Astros">Houston Astros</label> 
+			    <input type="radio" id="St Louis Cardinals" name="q5">
+			    <label for="St Louis Cardinals">St Louis Cardinals</label>
+			 </div>
 
-   <p>What basketball great made the decision to switch sports, signing a minor league baseball contract with the Chicago White Sox in 1994?</p>
+   		<p>What basketball great made the decision to switch sports, signing a minor league baseball contract with the Chicago White Sox in 1994?</p>
 
-  <div>
-    <input type="radio" id="Bo Jackson" name="q6">
-    <label for="Bo Jackson">Bo Jackson</label>
-    <input type="radio"  id="Michael Jordan" name="q6">
-     <label for="Michael Jordan">Michael Jordan</label>
-    <input type="radio" id="Allen Iverson" name="q6">
-     <label for="Allen Iverson">Allen Iverson</label> 
-    <input type="radio" id="Karl Malone" name="q6">
-     <label for="Karl Malone">Karl Malone</label>
- </div>
+			  <div>
+			    <input type="radio" id="Bo Jackson" name="q6">
+			    <label for="Bo Jackson">Bo Jackson</label>
+			    <input type="radio"  id="Michael Jordan" name="q6">
+			    <label for="Michael Jordan">Michael Jordan</label>
+			    <input type="radio" id="Allen Iverson" name="q6">
+			    <label for="Allen Iverson">Allen Iverson</label> 
+			    <input type="radio" id="Karl Malone" name="q6">
+			    <label for="Karl Malone">Karl Malone</label>
+			 </div>
 
-   <p>What country has contributed the most players to Major League Baseball outside of the United States?</p>
+   		<p>What country has contributed the most players to Major League Baseball outside of the United States?</p>
 
-  <div>
-    <input type="radio" id="Dominican Republic" name="q7">
-    <label for="Dominican Republic">Dominican Republic</label>
-    <input type="radio"  id="Mexico" name="q7">
-     <label for="Mexico">Mexico</label>
-    <input type="radio" id="Cuba" name="q7">
-     <label for="Cuba">Cuba</label> 
-    <input type="radio" id="Japan" name="q7">
-     <label for="Japan">Japan</label>
- </div>
+			  <div>
+			    <input type="radio" id="Dominican Republic" name="q7">
+			    <label for="Dominican Republic">Dominican Republic</label>
+			    <input type="radio"  id="Mexico" name="q7">
+			    <label for="Mexico">Mexico</label>
+			    <input type="radio" id="Cuba" name="q7">
+			    <label for="Cuba">Cuba</label> 
+			    <input type="radio" id="Japan" name="q7">
+			    <label for="Japan">Japan</label>
+			 </div>
 
-   <p>Where is the National Baseball Hall of Fame and Museum located?</p>
+   		<p>Where is the National Baseball Hall of Fame and Museum located?</p>
 
-  <div>
-    <input type="radio" id="Omaha, NE" name="q8">
-    <label for="Omaha, NE">Omaha, NE</label>
-    <input type="radio"  id="Springfield, MA" name="q8">
-     <label for="Springfield, MA">Springfield, MA</label>
-    <input type="radio" id="Canton, OH" name="q8">
-     <label for="Canton, OH">Canton, OH</label> 
-    <input type="radio" id="Cooperstown, NY" name="q8">
-     <label for="Cooperstown, NY">Cooperstown, NY</label>
- </div>
+			  <div>
+			    <input type="radio" id="Omaha, NE" name="q8">
+			    <label for="Omaha, NE">Omaha, NE</label>
+			    <input type="radio"  id="Springfield, MA" name="q8">
+			    <label for="Springfield, MA">Springfield, MA</label>
+			    <input type="radio" id="Canton, OH" name="q8">
+			    <label for="Canton, OH">Canton, OH</label> 
+			    <input type="radio" id="Cooperstown, NY" name="q8">
+			    <label for="Cooperstown, NY">Cooperstown, NY</label>
+			 </div>
 
-   <p>Where was the first Major League Baseball All-Star Game played?</p>
+   		<p>Where was the first Major League Baseball All-Star Game played?</p>
 
-  <div>
-    <input type="radio" id="Los Angeles, CA" name="q9">
-    <label for="Los Angeles, CA">Los Angeles, CA</label>
-    <input type="radio"  id="New York, NY" name="q9">
-     <label for="New York, NY">New York, NY</label>
-    <input type="radio" id="Dallas, TX" name="q9">
-     <label for="Dallas, TX">Dallas, TX</label> 
-    <input type="radio" id="Chicago, IL" name="q9">
-     <label for="Chicago, IL">Chicago, IL</label>
- </div>
-
-
-  <p>Who holds the highest career batting average of all time?</p>
-
-  <div>
-    <input type="radio" id="Ted Williams" name="q10">
-    <label for="Ted Williams">Ted Williams</label>
-    <input type="radio"  id="Ty Cobb" name="q10">
-     <label for="Ty Cobb">Ty Cobb</label>
-    <input type="radio" id="Jose Altuve" name="q10">
-     <label for="Jose Altuve">Jose Altuve</label> 
-    <input type="radio" id="Willie Mays" name="q10">
-     <label for="Willie Mays">Willie Mays</label>
- </div>
+			  <div>
+			    <input type="radio" id="Los Angeles, CA" name="q9">
+			    <label for="Los Angeles, CA">Los Angeles, CA</label>
+			    <input type="radio"  id="New York, NY" name="q9">
+			    <label for="New York, NY">New York, NY</label>
+			    <input type="radio" id="Dallas, TX" name="q9">
+			    <label for="Dallas, TX">Dallas, TX</label> 
+			    <input type="radio" id="Chicago, IL" name="q9">
+			    <label for="Chicago, IL">Chicago, IL</label>
+			 </div>
 
 
+  		<p>Who holds the highest career batting average of all time?</p>
 
-  <div>
-    <button id="submitquiz" type="submit">Submit</button>
-  </div>
+			  <div>
+			    <input type="radio" id="Ted Williams" name="q10">
+			    <label for="Ted Williams">Ted Williams</label>
+			    <input type="radio"  id="Ty Cobb" name="q10">
+			    <label for="Ty Cobb">Ty Cobb</label>
+			    <input type="radio" id="Jose Altuve" name="q10">
+			    <label for="Jose Altuve">Jose Altuve</label> 
+			    <input type="radio" id="Willie Mays" name="q10">
+			    <label for="Willie Mays">Willie Mays</label>
+			 </div>
 
-</form>
+
+
+		<div>
+			<button id="submitquiz" type="submit">Submit</button>
+		</div>
+
+	</form>
+</div>	
+
+
+<div id="results">
+	<h4 id='correct'>Correcr Answers:</h4>
+	<h4 id='incorrect'>Incorrect Answers:</h4>
+	<h4 id='na'>Unanswered:</h4>
+</div>
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
 
 
