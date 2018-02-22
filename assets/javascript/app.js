@@ -9,7 +9,7 @@ $(document).ready(function() {
 
   var intervalId;
   var clockRunning = false;
-  var stopwatch = 60;
+  var timeRemain = 60;
 
   $("#startquiz").on("click", function() {
   	start();
@@ -22,7 +22,7 @@ $(document).ready(function() {
     if (!clockRunning) {
         intervalId = setInterval(count, 1000);
         clockRunning = true;
-        console.log(stopwatch)
+        console.log(timeRemain)
     }
   };
 
@@ -32,11 +32,14 @@ $(document).ready(function() {
   };
 
 	function count () {
-		stopwatch--;
-		$('#gameTimer').html(stopwatch)
-		console.log(stopwatch)
+		timeRemain--;
+		$('#timer').html(' Time Remaining: ' + timeRemain);
+		console.log(timeRemain)
 	};
 
+var numberCorrect = 0;
+var numberIncorrect = 0;
+var numberUnanswered = 0;
 
 
 var questions = [{
