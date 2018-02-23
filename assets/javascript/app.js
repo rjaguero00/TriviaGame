@@ -7,13 +7,13 @@ $(document).ready(function() {
   $('#startquiz').hide();
   });
 
-  var intervalId;
-  var clockRunning = false;
-  var timeRemain = 15;
+	var intervalId;
+	var clockRunning = false;
+	var timeRemain = 15;
 
 	var numberCorrect = 0;
 	var numberIncorrect = 0;
-var numberUnanswered = 0;
+	var numberUnanswered = 0;
 
   $("#startquiz").on("click", function() {
   	start();
@@ -46,6 +46,7 @@ var numberUnanswered = 0;
         if(timeRemain <= 0){
         	stop();
         }
+
 	};
 
 	function checkAnswers(){
@@ -58,7 +59,21 @@ var numberUnanswered = 0;
 				console.log("No");
 			}
 		});
-	}
+
+	function answersCorrect(){
+		if(ele.getAttribute('correct') == "true"){
+			numberCorrect++;
+		}
+		$('#cA').html('Correct Answers: ' + numberCorrect);
+	};
+
+	function answersIncorrect() {
+		if(ele.getAttribute('correct') == "false"){
+			numberIncorrect++;
+		}
+		$('#iC').html('Incorrect Answers ' + numberIncorrect);
+	};
+}
 
 
 // var theAnswers = [
