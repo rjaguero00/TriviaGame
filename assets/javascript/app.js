@@ -19,6 +19,9 @@ $(document).ready(function() {
   	start();
   });
 
+  $("#submitquiz").on("click", function() {
+  	checkAnswers();
+  });
 
 
 
@@ -58,6 +61,7 @@ $(document).ready(function() {
 			}else{
 				answersIncorrect();
 			}
+				answersUnanswered();
 		});
 
 	function answersCorrect(){
@@ -67,8 +71,13 @@ $(document).ready(function() {
 
 	function answersIncorrect() {
 			numberIncorrect++;
-			$('#iC').html('Incorrect Answers ' + numberIncorrect);
-	};
+			$('#iC').html('Incorrect Answers: ' + numberIncorrect);
+		};
+
+	function answersUnanswered () {
+		numberUnanswered = 10 - numberCorrect - numberIncorrect;
+		$('#uA').html('Unanswered: ' + numberUnanswered);
+	}
 }
 
 
