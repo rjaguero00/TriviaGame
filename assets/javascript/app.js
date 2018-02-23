@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 	var intervalId;
 	var clockRunning = false;
-	var timeRemain = 15;
+	var timeRemain = 20;
 
 	var numberCorrect = 0;
 	var numberIncorrect = 0;
@@ -20,9 +20,8 @@ $(document).ready(function() {
   });
 
   $("#submitquiz").on("click", function() {
-  	checkAnswers();
+    stop();
   });
-
 
 
   function start() {
@@ -77,21 +76,9 @@ $(document).ready(function() {
 	function answersUnanswered () {
 		numberUnanswered = 10 - numberCorrect - numberIncorrect;
 		$('#uA').html('Unanswered: ' + numberUnanswered);
-	}
-}
+	};
 
+};
 
-// var theAnswers = [
-// "Baltimore Orioles",
-// "Montreal Expos",
-// "Barry Bonds",
-// "Fenway Park",
-// "Houston Astros",
-// "Michael Jordan",
-// "Dominican Republic",
-// "Cooperstown, NY",
-// "Chicago, IL",
-// "Houston Astros",
-// ];
 
 });
