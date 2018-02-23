@@ -54,24 +54,20 @@ $(document).ready(function() {
 		answers.each(function(index, ele){
 			console.log(ele)
 			if(ele.getAttribute('correct') == "true"){
-				console.log("Yes");
+				answersCorrect();
 			}else{
-				console.log("No");
+				answersIncorrect();
 			}
 		});
 
 	function answersCorrect(){
-		if(ele.getAttribute('correct') == "true"){
 			numberCorrect++;
-		}
-		$('#cA').html('Correct Answers: ' + numberCorrect);
-	};
+			$('#cA').html('Correct Answers: ' + numberCorrect);
+		};
 
 	function answersIncorrect() {
-		if(ele.getAttribute('correct') == "false"){
 			numberIncorrect++;
-		}
-		$('#iC').html('Incorrect Answers ' + numberIncorrect);
+			$('#iC').html('Incorrect Answers ' + numberIncorrect);
 	};
 }
 
