@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 	var intervalId;
 	var clockRunning = false;
-	var timeRemain = 20;
+	var timeRemain = 60;
 
 	var numberCorrect = 0;
 	var numberIncorrect = 0;
