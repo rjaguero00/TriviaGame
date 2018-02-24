@@ -77,3 +77,7 @@ p {
 	color: #0000ff;
 	text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
 }
+
+#listofQs{
+	background: rgba(0,0,0,.5);
+}
